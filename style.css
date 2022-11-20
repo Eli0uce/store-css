@@ -1,0 +1,237 @@
+/* --- ignore --- */
+body {
+  font-family: "Helvetica-Neue", sans-serif;
+}
+
+/* --- ignore --- */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: relative; /* postiion can be `fixed` */
+  height: 10vh; /* header height should be same across app */
+  /* define base layout style */
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  /* default appearance */
+  background: transparent;
+  color: white;
+  text-transform: uppercase;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.header .header--block {
+  position: relative;
+  z-index: 1;
+  /* vertically/hosrizontally align items inside */
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header--block.side-block {
+  flex-basis: 20%;
+}
+
+.header .header--block.side-block:first-child {
+  justify-content: flex-start;
+  margin-left: 2vw;
+}
+
+.header .header--block.side-block:last-child {
+  justify-content: flex-end;
+  margin-right: 2vw;
+}
+
+.header .header--block.center-block {
+  text-align: center;
+  flex-basis: 60%;
+}
+
+.header.vertical-header {
+  background: #fd6769;
+  background: linear-gradient(90deg, #fd6769 0%, #fe8852 100%);
+  color: white;
+}
+
+.header.vertical-header {
+  background: #fd6769;
+  background: linear-gradient(90deg, #fd6769 0%, #fe8852 100%);
+  color: white;
+}
+
+.header.accounts-header {
+  background: white;
+  color: #252525;
+}
+
+.header.offer-details-header {
+  background: #f8eb03;
+  color: #252525;
+}
+
+.header.my-money-header {
+  background-color: #58a1e8;
+  background: linear-gradient(40deg, #58a1e8 20%, #65c6e9 100%);
+  box-shadow: 0 0 3px 0 rgb(51, 127, 195);
+  color: white;
+}
+
+.header.my-money-details-header {
+  background-color: #3499b9;
+  background: linear-gradient(25deg, #3499b9 30%, #388cb5 100%);
+  color: white;
+} /*# sourceMappingURL=style.css.map */
+
+body {
+  margin: 0;
+}
+
+.banner-background {
+  position: absolute;
+  background-image: url(img/plates-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+}
+
+.banner {
+  z-index: 2;
+  position: absolute;
+  margin-left: 25%;
+  background-color: #393935;
+  background-position: center center;
+  text-align: center;
+  padding: 150px 160px;
+  color: white;
+}
+
+hr {
+  width: 100px;
+  color: white;
+  background-color: white;
+  border-color: white;
+}
+
+.border-limit {
+  margin-top: 25%;
+}
+
+/* SHOP */
+* {
+  box-sizing: border-box;
+}
+.shop-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: #d21717;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #f4f9fb;
+  font-weight: 900;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: #f4f9fb;
+  background-color: #a51212;
+}
+
+.shop-item {
+  width: 25%;
+  margin: 30px 4.1%;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: border 0.24s ease-in-out;
+}
+
+.shop-item h2 {
+  font-size: 17px;
+  margin: 0;
+}
+.shop-item h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.shop-item h3 {
+  font-size: 17px;
+  color: rgb(168, 168, 168);
+}
+.shop-item .img {
+  width: 100%;
+  overflow: hidden;
+}
+.shop-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in;
+}
+.shop-item .sale {
+  position: absolute;
+  left: -50%;
+  top: 0;
+  width: 100%;
+  transform: rotate(-45deg);
+  transform-origin: 50% 0;
+  font-weight: 100;
+}
+.shop-item .sale span {
+  background-color: #d21717;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 50px;
+  padding: 4px 0;
+  transition: margin 0.3s ease;
+}
+
+.shop-item:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.shop-item:hover img {
+  transform: scale(1.1);
+}
+.shop-item:hover .sale span {
+  margin-top: 20px;
+}
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+  margin: 10px 0;
+}
+.price .new {
+  color: #d21717;
+  font-weight: 700;
+}
+.price .old {
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: line-through;
+}
